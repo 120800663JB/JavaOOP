@@ -30,7 +30,7 @@ public class country {
     }
 
     public void displayInfo() {
-        System.out.println(name + population + areaSqMile); 
+        System.out.println(name + " " + population + " " + areaSqMile); 
     }
 
     public int popDensity() {
@@ -38,7 +38,7 @@ public class country {
     }
 
     public boolean isLarger(country c) {
-        return (c.getArea() > this.areaSqMile);
+        return (c.getArea() < this.areaSqMile);
     }
 
     
