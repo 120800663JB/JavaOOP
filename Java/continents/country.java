@@ -34,7 +34,7 @@ public class country {
     }
 
     public int popDensity() {
-        return population / areaSqMile;
+        return Math.round(population / areaSqMile);
     }
 
     public boolean isLarger(country c) {
