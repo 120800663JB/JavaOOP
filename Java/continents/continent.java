@@ -10,8 +10,14 @@ public class continent {
     private String name;
     private ArrayList<country> countries = new ArrayList<country>();
 
-    public continent (String Name) {
+    public continent (String Name, country [] start) {
         this.name = Name;
+
+        for (int i = 0; i < start.length; i++) {
+
+            countries.add(start[i]);
+
+        }
     }
 
     public void addCountry(country c) {
